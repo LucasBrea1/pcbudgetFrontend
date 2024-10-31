@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'New Amsterdam';
+  src: url('./assets/fonts/NewAmsterdam-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.title {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
