@@ -15,7 +15,7 @@ const initialState = {
     'auth/register',
     async (userData, { rejectWithValue }) => {
       try {
-        const response = await axios.post('http://localhost:3001/register', userData);
+        const response = await axios.post('https://pcbudgetbackend.onrender.com/register', userData);
         return response.data;
       } catch (error) {
         console.log(error.response.data)
@@ -29,7 +29,7 @@ const initialState = {
     'auth/login',
     async (credentials, { rejectWithValue }) => {
       try {
-        const response = await axios.post('http://localhost:3001/login', credentials);
+        const response = await axios.post('https://pcbudgetbackend.onrender.com/login', credentials);
         return response.data;
       } catch (error) {
         return rejectWithValue(error.response.data);
